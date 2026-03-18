@@ -157,8 +157,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .section_portfolio .portfolio_card .portfolio_image {
-    height: 250px;
+  .section_portfolio .portfolio_card {
+    height: 650px;
   }
   .section_portfolio .portfolio_card .portfolio_image img {
     position: relative;

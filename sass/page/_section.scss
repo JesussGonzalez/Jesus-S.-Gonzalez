@@ -76,9 +76,8 @@
 @media (max-width: 768px) {
     .section_portfolio {
         .portfolio_card {
+            height: 650px;
             .portfolio_image {
-                height: 250px; 
-                
                 img {
                     position: relative; 
                     height: 100%;

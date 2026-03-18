@@ -40,10 +40,13 @@
                 top: 0;
                 transition: transform 2s ease-in-out;
             }
-            &:hover img{
+            // --- SOLO PARA ESCRITORIO ---
+            @media (min-width: 769px) {
+                &:hover img {
                 transform: translateY(calc(-100% + 350px));
+                }
             }
-        }
+        }    
 
         .portfolio_info {
             flex: 1;
@@ -65,6 +68,25 @@
             }
             .btn-secundario{
                 display: none;
+            }
+        }
+    }
+}
+// --- SOLO PARA MOBILE ---
+@media (max-width: 768px) {
+    .section_portfolio {
+        .portfolio_card {
+            .portfolio_image {
+                height: 250px; 
+                
+                img {
+                    position: relative; 
+                    height: 100%;
+                    object-fit: cover; 
+                    object-position: top;
+                    // Desactivamos cualquier transformación remanente
+                    transform: none !important; 
+                }
             }
         }
     }

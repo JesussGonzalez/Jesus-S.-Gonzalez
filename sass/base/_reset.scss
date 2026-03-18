@@ -1,0 +1,17 @@
+@use "../utilitie/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: $color-bg;
+    color: $color-text;
+    font-family: $font-main;
+    margin: 0;
+    line-height: 1.6;
+
+}
+

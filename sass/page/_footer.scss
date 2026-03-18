@@ -1,0 +1,28 @@
+@use "../utilitie/variables" as *;
+
+@use "../mixing/mixing" as *;
+
+.footer_main {
+    padding: 3rem 0;
+    background-color: darken($color-bg, 5%); // Un tono más oscuro que el fondo principal
+    text-align: center;
+    border-top: 1px solid rgba($color-accent, 0.1);
+
+    p {
+        color: $color-text-dim;
+        margin: 0;
+        font-size: 1rem;
+
+        strong {
+            color: $color-accent;
+        }
+    }
+
+    .footer_sub {
+        font-size: 0.8rem;
+        margin-top: 10px;
+        opacity: 0.6;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}

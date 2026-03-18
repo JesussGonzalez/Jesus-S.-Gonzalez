@@ -1,0 +1,60 @@
+@use "../utilitie/variables" as *;
+
+@use "../mixing/mixing" as *;
+
+.section_portfolio {
+    padding: 5rem 0;
+
+    .portfolio_grid {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .portfolio_card {
+        background-color: #1e293b;
+        border-radius: 15px;
+        overflow: hidden;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column; // En móvil uno arriba de otro
+        transition: transform 0.3s ease;
+
+        @media (min-width: 768px) {
+            flex-direction: row; // En PC uno al lado del otro
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio_image {
+            flex: 1;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .portfolio_info {
+            flex: 1;
+            padding: 2rem;
+
+            h3 { color: #38bdf8; margin-bottom: 1rem; }
+            p { font-size: 0.9rem; color: #94a3b8; margin-bottom: 1.5rem; }
+
+            .portfolio_tags {
+                margin-bottom: 1.5rem;
+                span {
+                    background: rgba(56, 189, 248, 0.1);
+                    color: #38bdf8;
+                    padding: 5px 12px;
+                    border-radius: 20px;
+                    font-size: 0.8rem;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+
+@use "../utilitie/variables" as *;
+
+@use "../mixing/mixing" as *;
+
+.main_page {
+    // Hero Section
+    .section_page {
+        height: 80vh;
+        @include flex-center;
+        text-align: center;
+
+        .section_container {
+            h1 {
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+                
+                span {
+                    color: $color-accent;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $color-text-dim;
+                margin-bottom: 2rem;
+            }
+
+            .btn-primary {
+                display: inline-block;
+                padding: 12px 30px;
+                background-color: $color-accent;
+                color: $color-bg;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 20px rgba($color-accent, 0.3);
+                }
+            }
+        }
+    }
+
+    // Skills Section
+    .section_skills {
+        padding: 4rem 2rem;
+        background-color: darken($color-bg, 2%);
+
+        .skill_subtitulo {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .skills_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+
+            .skill_card {
+                background-color: $color-card;
+                padding: 2rem;
+                border-radius: 12px;
+                text-align: center;
+                border: 1px solid transparent;
+                transition: border 0.3s ease;
+
+                &:hover {
+                    border: 1px solid $color-accent;
+                    color: $color-accent;
+                }
+            }
+        }
+    }
+}
+
+// Clase que oculta el elemento
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+// Clase que aplicaremos con JS para mostrarlo
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

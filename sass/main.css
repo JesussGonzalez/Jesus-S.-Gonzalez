@@ -143,6 +143,9 @@ body {
   font-size: 0.8rem;
   margin-right: 5px;
 }
+.section_portfolio .portfolio_card .portfolio_info .btn-secundario {
+  display: none;
+}
 
 .section_contact {
   padding: 80px 0;

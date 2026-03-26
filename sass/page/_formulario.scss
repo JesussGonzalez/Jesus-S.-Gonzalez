@@ -1,0 +1,99 @@
+.section_contact h2 span {
+  color: #38bdf8;
+}
+
+/* Contenedor del formulario */
+.contact_form_container {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 2rem;
+    background-color: #1e293b; /* Color igual a tus skill_cards */
+    border-radius: 15px;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    text-align: left;
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .form_group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            }
+        & label{
+            color: #38bdf8;
+            font-size: 0.9rem;
+            font-weight: bold;
+            }
+        & input, & textarea {
+            padding: 0.75rem;
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            background-color: #0f172a; /* Fondo más oscuro para contraste */
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 12px;
+            color: #f1f5f9;
+            font-family: inherit;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            &:focus {
+                outline: none;
+                border-color: #38bdf8;
+                box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+                }
+            }
+    & .btn-primary {
+        cursor: pointer;
+        border: none;
+        width: 100%; 
+        font-size: 1.1rem;
+        padding: 15px; // Un poco más de aire para que sea fácil de clickear    
+        /* El color de fondo acorde a tu marca */
+        background-color: #38bdf8; 
+        color: #0f172a; // Texto oscuro para que contraste bien con el celeste
+        font-weight: bold;
+        border-radius: 8px;    
+        /* Transiciones para que el hover sea suave */
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        &:hover {
+            transform: translateY(-3px);
+            /* El resplandor (glow) que ya usás en otras partes */
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+            background-color: #7dd3fc; // Un celeste un poco más claro al apoyar el mouse
+            }               
+        &:active {
+            transform: translateY(-1px); // Efecto de "presionado"
+            }
+        }
+    }
+}      
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e293b;
+  color: #38bdf8;
+  padding: 16px 25px;
+  border-radius: 12px;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  z-index: 1000;
+  
+  /* Animación inicial: invisible y movido a la derecha */
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast i {
+  font-size: 1.2rem;
+}

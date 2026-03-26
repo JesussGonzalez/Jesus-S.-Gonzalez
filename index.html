@@ -43,25 +43,62 @@
                         </div>
                         <div class="portfolio_info">
                             <h3>Nitya Bhaktii - Bienestar Holístico</h3>
-                                <p>Desarrollo de web profesional, realizada para Nitya Bhaktii utilizando Sass para una estructura de estilos modular y JavaScript para animaciones interactivas. Implementación de diseño responsivo y optimización de carga.</p>
-                                <div class="portfolio_tags">
-                                    <span>HTML5</span>
-                                    <span>CSS3</span>
-                                    <span>SASS</span>
-                                    <span>JAVASCRIPT</span>                                    
-                                </div>
-                                <a href="#" class="btn-secundario">Ver Demo</a>
+                            <p>Desarrollo de web profesional, realizada para Nitya Bhaktii utilizando Sass para una estructura de estilos modular y JavaScript para animaciones interactivas. Implementación de diseño responsivo y optimización de carga.</p>
+                            <div class="portfolio_tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>SASS</span>
+                                <span>JAVASCRIPT</span>                                    
+                            </div>
+                            <a href="#" class="btn-secundario">Ver Demo</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="portfolio_grid">
+                    <article class="portfolio_card">
+                        <div class="portfolio_image">
+                            <img src="image/jesussgonzalez.github.io_e-commerce_ (1).png" alt="Captura del Proyecto E-Commerce">
+                        </div>
+                        <div class="portfolio_info">
+                            <h3>E-Commerce Full-Stack / Responsive</h3>
+                            <p>Desarrollo de una plataforma de comercio electrónico moderna y funcional, diseñada con un enfoque Mobile-First. La aplicación permite a los usuarios navegar por catálogos de productos, gestionar un carrito de compras en tiempo real y completar un flujo de checkout intuitivo.</p>
+                            <div class="portfolio_tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>SASS</span>
+                                <span>JAVASCRIPT</span>                                    
+                            </div>
+                            <a href="#" class="btn-secundario">Ver Demo</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+        <section class="section_contact">
+            <div class="section_container">
+                <h2>Enviame un <span>mensaje</span></h2>
+    
+                <div class="contact_form_container">
+                    <form action="https://formspree.io/f/mykbyqkq" method="POST" class="contact_form">
+                        <div class="form_group">
+                            <label for="email">Tu email:</label>
+                            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
 
+                        <div class="form_group">
+                            <label for="message">Tu mensaje:</label>
+                            <textarea name="message" id="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
         <section id="contacto" class="section_contact reveal">
             <div class="container">
-                <h2 class="contact_titulo">¿Hablamos?</h2>
-                    <p class="contact_subtitulo">Estoy listo para ayudarte con tu próximo sitio web.</p>
-        
+                
                 <div class="contact_links">
                     <a href="https://wa.me/5491127872259" target="_blank" class="contact_item">
                         <i class="fa-brands fa-whatsapp"></i>
@@ -75,13 +112,14 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="mailto:jesussgonzalez86@gmail.com" class="contact_item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
+                    
                 </div>
             </div>
         </section>
+        <div id="toast" class="toast">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>¡Mensaje enviado con éxito!</span>
+        </div>
     </main>
     <footer class="footer_main">
         <div class="footer_container">

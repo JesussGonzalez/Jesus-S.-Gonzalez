@@ -20,3 +20,40 @@ elementsToAnimate.forEach((el) => observer.observe(el));
 const yearSpan = document.getElementById('year');
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
+
+//js de formulario
+
+
+const $form = document.querySelector('.contact_form');
+const $toast = document.getElementById('toast');
+
+$form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  
+  const formData = new FormData($form);
+  
+  try {
+    const response = await fetch($form.action, {
+      method: $form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      $form.reset();
+      
+      // Mostrar el toast
+      $toast.classList.add('show');
+      
+      // Ocultarlo después de 4 segundos
+      setTimeout(() => {
+        $toast.classList.remove('show');
+      }, 4000);
+
+    } else {
+      alert('Hubo un error al enviar. Intentá de nuevo.');
+    }
+  } catch (error) {
+    alert('Error de conexión. Revisá tu internet.');
+  }
+});

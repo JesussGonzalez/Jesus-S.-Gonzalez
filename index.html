@@ -1,134 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="indigo" data-font="grotesk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desarrollador Frontend especializado en crear sitios web modernos, rápidos y adaptables con Sass y JavaScript. Localizado en Argentina.">
-    <meta property="og:title" content="Jesus S. Gonzalez | Portfolio">
-    <meta property="og:description" content="Diseño y desarrollo de sitios web modernos.">
-    <meta property="og:image" content="assets/img/tu-foto-o-captura.jpg">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="sass/main.css">
-    <title>Jesus S. Gonzalez | Desarrollador Frontend</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesús S. Gonzalez | Desarrollador Web Frontend & Freelancer</title>
+  <meta name="description" content="Desarrollador web frontend freelance. Creo sitios web modernos, rápidos y responsivos con HTML, CSS, JavaScript, React y automatizaciones para hacer crecer tu negocio." />
+  <meta name="author" content="Jesús S. Gonzalez" />
+  <meta property="og:title" content="Jesús S. Gonzalez | Desarrollador Web Frontend" />
+  <meta property="og:description" content="Sitios web modernos, landing pages, portfolios y automatizaciones que convierten visitas en clientes." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-    <main class="main_page">
-        <section class="section_page">
-            <div class="section_container">
-                <h1>Desarrollo Web <span>Sass & JavaScript</span></h1>
-                <p>Creo sitios rápidos, modernos y adaptables a cualquier dispositivo.</p>
-                <a href="#proyectos" class="btn-primary">Ver mi trabajo</a>
-            </div>
-        </section>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-        <section class="section_skills reveal">
-            <h2 class="skill_subtitulo">Mi Stack Técnico</h2>
-            <div class="skills_grid">
-                <div class="skill_card">HTML5 & Semántica</div>
-                <div class="skill_card">CSS3 & Sass</div>
-                <div class="skill_card">JavaScript Moderno</div>
-                <div class="skill_card">Git & GitHub</div>
-                <div class="skill_card">Responsive Design</div>
-            </div>
-        </section>
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio — Jesús S. Gonzalez">
+        <span class="brand-mark">JG</span>
+        <span class="brand-name">Jesús S. Gonzalez<span> · Frontend</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-primary btn-sm nav-cta" href="#contacto">Contactarme</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Navegación móvil">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-primary" href="#contacto">Contactarme</a>
+    </nav>
+  </header>
 
-        <section id="proyectos" class="section_portfolio reveal">
-            <div class="portfolio_container">
-                <h2 class="portfolio_titulo">Proyectos Recientes</h2>
-        
-                <div class="portfolio_grid">
-                    <article class="portfolio_card">
-                        <div class="portfolio_image">
-                            <img src="image/nityabhaktii.png" alt="Captura del Proyecto Nithya Baktii">
-                        </div>
-                        <div class="portfolio_info">
-                            <h3>Nitya Bhaktii - Bienestar Holístico</h3>
-                            <p>Desarrollo de web profesional, realizada para Nitya Bhaktii utilizando Sass para una estructura de estilos modular y JavaScript para animaciones interactivas. Implementación de diseño responsivo y optimización de carga.</p>
-                            <div class="portfolio_tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>SASS</span>
-                                <span>JAVASCRIPT</span>                                    
-                            </div>
-                            <a href="#" class="btn-secundario">Ver Demo</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="portfolio_grid">
-                    <article class="portfolio_card">
-                        <div class="portfolio_image">
-                            <img src="image/jesussgonzalez.github.io_e-commerce_ (1).png" alt="Captura del Proyecto E-Commerce">
-                        </div>
-                        <div class="portfolio_info">
-                            <h3>E-Commerce Full-Stack / Responsive</h3>
-                            <p>Desarrollo de una plataforma de comercio electrónico moderna y funcional, diseñada con un enfoque Mobile-First. La aplicación permite a los usuarios navegar por catálogos de productos, gestionar un carrito de compras en tiempo real y completar un flujo de checkout intuitivo.</p>
-                            <div class="portfolio_tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>SASS</span>
-                                <span>JAVASCRIPT</span>                                    
-                            </div>
-                            <a href="#" class="btn-secundario">Ver Demo</a>
-                        </div>
-                    </article>
-                </div>
-                
-            </div>
-        </section>
-        <section class="section_contact">
-            <div class="section_container">
-                <h2>Enviame un <span>mensaje</span></h2>
-    
-                <div class="contact_form_container">
-                    <form action="https://formspree.io/f/mykbyqkq" method="POST" class="contact_form">
-                        <div class="form_group">
-                            <label for="email">Tu email:</label>
-                            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
-                        </div>
-
-                        <div class="form_group">
-                            <label for="message">Tu mensaje:</label>
-                            <textarea name="message" id="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        
-        <section id="contacto" class="section_contact reveal">
-            <div class="container">
-                
-                <div class="contact_links">
-                    <a href="https://wa.me/5491127872259" target="_blank" class="contact_item">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://github.com/jesussgonzalez" target="_blank" class="contact_item">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/jesus-gonzalez-7711393b8" target="_blank" class="contact_item">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    
-                </div>
-            </div>
-        </section>
-        <div id="toast" class="toast">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>¡Mensaje enviado con éxito!</span>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" data-screen-label="Hero">
+      <div class="container">
+        <span class="hero-status reveal"><span class="dot pulse"></span> Disponible para proyectos freelance · Argentina</span>
+        <h1 class="reveal" data-delay="1">Desarrollo sitios web modernos, rápidos y <em>adaptados a tu negocio</em></h1>
+        <p class="hero-sub reveal" data-delay="2">Creo páginas web, landing pages, portfolios y soluciones digitales con HTML, CSS, JavaScript, React y automatizaciones — pensados para mejorar tu presencia online, transmitir confianza y convertir visitas en clientes.</p>
+        <div class="hero-actions reveal" data-delay="3">
+          <a class="btn btn-primary" href="#proyectos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Ver proyectos
+          </a>
+          <a class="btn btn-whatsapp" href="https://wa.me/5491127872259?text=Hola%20Jes%C3%BAs,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20consultarte%20por%20un%20proyecto." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.512 5.26l-.999 3.648 3.477-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Hablemos por WhatsApp
+          </a>
         </div>
-    </main>
-    <footer class="footer_main">
-        <div class="footer_container">
-            <p>&copy; <span id="year"></span> - Desarrollado por Jesus S. Gonzalez</p>
-            <p class="footer_sub">Frontend Developer | Sass & JavaScript</p>
+        <div class="hero-meta reveal" data-delay="3">
+          <div class="hero-meta-item"><strong>Frontend &amp; Web</strong>HTML · CSS · JS · React</div>
+          <div class="hero-meta-item"><strong>Automatización</strong>Apps Script · APIs · Sheets</div>
+          <div class="hero-meta-item"><strong>Modalidad</strong>100% remoto · Workana</div>
         </div>
-    </footer>
-<script src="js/script.js"></script>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section id="servicios" data-screen-label="Servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2 class="section-title">Soluciones web que resuelven problemas reales</h2>
+          <p class="section-lead">No entrego solo "una página". Entrego una herramienta de trabajo: clara, rápida y pensada para que tu negocio consiga más consultas y ventas.</p>
+        </div>
+        <div class="cards" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section id="stack" data-screen-label="Stack">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Stack técnico</span>
+          <h2 class="section-title">Tecnologías con las que trabajo</h2>
+          <p class="section-lead">Herramientas modernas y estándares de la industria para construir productos rápidos, mantenibles y escalables.</p>
+        </div>
+        <div class="stack-wrap" id="stackGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos" data-screen-label="Proyectos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Proyectos</span>
+          <h2 class="section-title">Trabajo seleccionado</h2>
+          <p class="section-lead">Proyectos reales, en producción. Cada uno resuelve una necesidad concreta de negocio: captar consultas, mostrar información o facilitar una compra.</p>
+        </div>
+        <div class="projects">
+          <!-- Proyecto 1 -->
+          <article class="project reveal">
+            <div class="project-media">
+              <span class="project-index">01</span>
+              <image-slot id="proj-nitya" fit="cover" radius="0" src="/screenshots/Captura de pantalla 2026-05-29 150032.png" placeholder="Arrastrá la captura de Nitya Bhaktii"></image-slot>
+            </div>
+            <div class="project-body">
+              <h3>Nitya Bhaktii — Bienestar Holístico</h3>
+              <p>Sitio web profesional para servicios de bienestar y terapias holísticas, con reservas directas por WhatsApp. Diseño responsive, estética cálida y una estructura pensada para convertir visitas en consultas.</p>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>Sass</span><span>JavaScript</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://nityabhakti.github.io/NityaBhakti/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Proyecto 2 -->
+          <article class="project reveal" data-delay="1">
+            <div class="project-media">
+              <span class="project-index">02</span>
+              <image-slot id="proj-worldcup" fit="cover" radius="0" src="/screenshots/Captura de pantalla 2026-05-29 205724.png" placeholder="Arrastrá la captura del Fixture Mundial 2026"></image-slot>
+            </div>
+            <div class="project-body">
+              <h3>World Cup Fixture 2026</h3>
+              <p>Aplicación web del fixture del Mundial 2026: calendario de partidos, grupos y seguimiento de la competición. Enfoque mobile-first, interfaz dinámica con JavaScript y datos organizados para una consulta rápida y clara.</p>
+              <div class="project-tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Vercel</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://worldcup-fixture-2026.vercel.app/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Ver demo
+                </a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/JesussGonzalez/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.69-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.71 21.38 24 17.07 24 12 24 5.73 18.77.5 12 .5z"/></svg>
+                  Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" data-delay="1">
+            <div class="project-media">
+              <span class="project-index">03</span>
+              <image-slot id="proj-personal-trainer" fit="cover" radius="0" src="/screenshots/Captura de pantalla 2026-05-30 100244.png" placeholder="Arrastrá la captura del Fixture Mundial 2026"></image-slot>
+            </div>
+            <div class="project-body">
+              <h3>Personal-Trainer</h3>
+              <p>Landig page para profesionales. Enfoque mobile-first, interfaz dinámica con JavaScript y formulario integrado con Whatsapp.</p>
+              <div class="project-tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>WhatsApp</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://jesussgonzalez.github.io/Personal-Trainer/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Ver demo
+                </a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/JesussGonzalez/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.69-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.71 21.38 24 17.07 24 12 24 5.73 18.77.5 12 .5z"/></svg>
+                  Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+                
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi" data-screen-label="Sobre mí">
+      <div class="container">
+        <div class="about">
+          <div class="about-photo reveal">
+            <image-slot id="about-photo" shape="rounded" radius="22" src="screenshots/WhatsApp Image 2026-05-22 at 18.19.30.jpeg" placeholder="Arrastrá tu foto profesional"></image-slot>
+          </div>
+          <div class="about-text reveal" data-delay="1">
+            <span class="eyebrow">Sobre mí</span>
+            <h2 class="section-title">Diseño, código limpio y automatización</h2>
+            <p>Soy <strong>Jesús S. Gonzalez</strong>, desarrollador web frontend con experiencia en la creación de sitios modernos, responsivos y funcionales. Además, cuento con una sólida trayectoria administrativa, lo que me permite entender procesos de negocio, organizar información y proponer soluciones digitales prácticas.</p>
+            <p>Mi enfoque combina <strong>diseño, código limpio y automatización</strong> para entregar proyectos útiles, claros y escalables. Trabajo con comunicación constante y plazos cumplidos, para que sepas siempre en qué punto está tu proyecto.</p>
+            <div class="about-tags">
+              <span>Frontend</span><span>Responsive</span><span>Automatización</span><span>Asistencia virtual</span><span>Google Apps Script</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROPUESTA DE VALOR ============ -->
+    <section id="valor" data-screen-label="Propuesta de valor">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Por qué trabajar conmigo</span>
+          <h2 class="section-title">Lo que recibís en cada proyecto</h2>
+        </div>
+        <div class="values" id="valuesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto" data-screen-label="Contacto">
+      <div class="container">
+        <div class="contact">
+          <div class="contact-aside reveal">
+            <span class="eyebrow">Contacto</span>
+            <h2 class="section-title">¿Tenés una idea o necesitás mejorar tu web?</h2>
+            <p class="section-lead">Escribime y lo vemos juntos. Respondo cada mensaje de forma personal y sin compromiso — me cuentas qué necesitás y te propongo el mejor camino.</p>
+            <div class="contact-links">
+              <a class="contact-link" href="https://wa.me/5491127872259?text=Hola%20Jes%C3%BAs,%20me%20gustar%C3%ADa%20consultarte%20por%20un%20proyecto." target="_blank" rel="noopener">
+                <span class="contact-link-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.512 5.26l-.999 3.648 3.477-.907z"/></svg></span>
+                <span><b>WhatsApp</b><small>+54 9 11 2787 2259</small></span>
+              </a>
+              <a class="contact-link" href="mailto:jesussgonzalez86@gmail.com">
+                <span class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+                <span><b>Email</b><small>jesussgonzalez86@gmail.com</small></span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/jesusgonzalezdev/" target="_blank" rel="noopener">
+                <span class="contact-link-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></span>
+                <span><b>LinkedIn</b><small>/in/jesusgonzalezdev</small></span>
+              </a>
+              <a class="contact-link" href="https://github.com/JesussGonzalez/" target="_blank" rel="noopener">
+                <span class="contact-link-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.69-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.71 21.38 24 17.07 24 12 24 5.73 18.77.5 12 .5z"/></svg></span>
+                <span><b>GitHub</b><small>/JesussGonzalez</small></span>
+              </a>
+            </div>
+          </div>
+
+          <form class="form reveal" data-delay="1" id="contactForm" novalidate>
+            <div class="form-alert success" id="formSuccess" role="status">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>¡Mensaje enviado con éxito! Te responderé a la brevedad.</span>
+            </div>
+            <div class="form-alert error" id="formError" role="alert">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Revisá los campos marcados antes de enviar.</span>
+            </div>
+            <!-- Honeypot anti-spam: oculto para humanos, los bots tienden a rellenarlo -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="company">No completes este campo</label>
+              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="field" id="field-name">
+              <label for="name">Nombre <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Tu nombre" required aria-required="true" />
+              <span class="field-error">Ingresá tu nombre.</span>
+            </div>
+            <div class="field" id="field-email">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required aria-required="true" />
+              <span class="field-error">Ingresá un email válido.</span>
+            </div>
+            <div class="field" id="field-message">
+              <label for="message">Mensaje <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="Contame sobre tu proyecto: qué necesitás, plazos y objetivos." required aria-required="true"></textarea>
+              <span class="field-error">Escribí un mensaje (mínimo 10 caracteres).</span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              Enviar mensaje
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note">También podés escribirme directo por WhatsApp y respondo más rápido.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-copy">© <span id="year"></span> — Desarrollado por <b>Jesús S. Gonzalez</b></p>
+        <p class="footer-tagline">Frontend Developer · React · JavaScript · Automatización</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/5491127872259" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.512 5.26l-.999 3.648 3.477-.907z"/></svg></a>
+        <a href="mailto:jesussgonzalez86@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+        <a href="https://www.linkedin.com/in/jesusgonzalezdev/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://github.com/JesussGonzalez/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.69-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.71 21.38 24 17.07 24 12 24 5.73 18.77.5 12 .5z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="image-slot.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- Tweaks panel (variaciones de color y tipografía) -->
+  <div id="tweaks-root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="assets/js/tweaks-app.jsx"></script>
 </body>
 </html>
